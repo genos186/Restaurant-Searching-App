@@ -4,4 +4,4 @@ This application is built on React-Native which is a cross-platform (can be used
 
 The application searches for restaurants within 5km radius, based on dish or type of cuisine. And returns all the restaurants based on their pricing (low,medium & high).
 
-Under Food/Src folder all the necessary files are situated.
+Under Food/Src folder source code is situated.
