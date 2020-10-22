@@ -1,4 +1,5 @@
-# Tidbits
+# Restaurant Searching App
 
-Tidbits is a billboard for some weird thoughts I have from time to time.   
-This is currently WIP
+This application is built on React-Native which is a cross-platform (can be used on IOS&Android) and Yelp Fusion API used for providing all the details regarding a restaurant such as rating,review,cost,location,etc.
+
+The application searches for restaurants within 5km radius, based on dish or type of cuisine. And returns all the restaurants based on their pricing (low,medium & high).
