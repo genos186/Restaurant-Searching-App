@@ -6,4 +6,4 @@ The application searches for restaurants within 5km radius, based on dish or typ
 
 Under Food/Src folder source code is situated.
 
-Yarn has been used as resource manager and expo sdk has been used.
+Yarn has been used as resource manager and expo sdk has been used for hosting the application.
