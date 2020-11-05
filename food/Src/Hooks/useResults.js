@@ -1,18 +1,19 @@
-import { useEffect, useState } from 'react';
+import { useEffect , useState } from 'react';
 import yelp from '../API/Yelp';
+import CitySearch from '../Screens/CitySearch';
 
-export default () => {
+export default ({ route }) => {
   const [results, setResults] = useState([]);
   const [errorMessage, setErrorMessage] = useState('');
 
-  const searchApi = async searchTerm => {
-    console.log('Hi there!');
+  const searchApi = async (searchTerm) => {
+    //console.log('Hi there!');
     try {
       const response = await yelp.get('/search', {
         params: {
           limit: 50,
           term: searchTerm,
-          location: searchLocation,
+          location: {route.params.paramKey} ,
         }
       });
       setResults(response.data.businesses);
@@ -25,7 +26,7 @@ export default () => {
   // is first rendered.  BAD CODE!
   // searchApi('pasta');
   //useEffect(() => {
-  //  searchApi('pasta');
+   // searchApi('pasta');
   //}, []);
 
   return [searchApi, results, errorMessage];
