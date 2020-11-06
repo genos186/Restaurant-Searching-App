@@ -13,7 +13,7 @@ export default function CitySearch({ navigation }) {
 	     		name="restaurant-menu" 
 	     		size={28} 
 	     		color="black"
-	     		style={alignItems= 'center', justifyContent= 'flex-start'} />
+	     		style={alignItems= 'center', justifyContent= 'flex-start', flex=1} />
 	     	<LocationBar
         		term={term}
         		onTermChange={setTerm}
