@@ -1,6 +1,5 @@
 import React from 'react';
-import { StyleSheet , Text , View } from 'react-native';
-import { MaterialIcons } from '@expo/vector-icons';
+import { StyleSheet , Text , View , Image } from 'react-native';
 import LocationBar from '../Components/LocationBar';
 
 export default function CitySearch({ navigation }) {
@@ -9,11 +8,7 @@ export default function CitySearch({ navigation }) {
 	return (
 	     <View>
 	 		
-	     	<MaterialIcons 
-	     		name="restaurant-menu" 
-	     		size={28} 
-	     		color="black"
-	     		style={alignItems= 'center', justifyContent= 'flex-start', flex=1} />
+	 		<Image source={require('./dine.jpg')} style={{ marginHorizontal:70, marginTop:10 }} />
 	     	<LocationBar
         		term={term}
         		onTermChange={setTerm}
